@@ -1,0 +1,22 @@
+# 二进制：不做行尾转换，diff 也不当文本展开
+*.epub  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.ttc   binary
+*.otf   binary
+*.woff2 binary
+
+# 文本：统一以 LF 入库，避免在 macOS/Windows 上产生整文件伪改动
+*.py    text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.md    text eol=lf
+*.html  text eol=lf
+*.xhtml text eol=lf
+*.opf   text eol=lf
+*.ncx   text eol=lf
+*.xml   text eol=lf
+
+# make 必须用 TAB 缩进，别被编辑器自动换成空格
+Makefile text eol=lf whitespace=tab-in-indent,trailing-space

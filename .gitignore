@@ -1,0 +1,13 @@
+# —— 构建中间产物 ——
+# build_epub.py 默认把中间产物写进系统临时目录（可删可重跑），不进仓库。
+# 下面这几个是早期版本遗留在项目目录里的残留，清理需手动 rm -rf，不要提交。
+_epub_build/
+_probe_empty/
+raw/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
